@@ -1,4 +1,4 @@
-# InspireMusic Demo Page
+# InspireMusic Demo
 
 <p align="center">
  <a href="https://github.com/FunAudioLLM/InspireMusic" target="_blank">
