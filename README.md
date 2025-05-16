@@ -1,1 +1,1 @@
-Demo page for paper - InspireMusic: Integrating Super Resolution and Large Language Model for High-Fidelity Long-Form Music Generation
+Demo
