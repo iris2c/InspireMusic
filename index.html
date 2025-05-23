@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/normalize.css">
 
-	<title>InspireMusic Homepage</title>
+	<title>InspireMusic Demo Page</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 </head>
@@ -26,11 +26,10 @@
 
 <div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
 	<div class="text-center">
-	<h2>InspireMusic: Integrating Super Resolution and Large Language Model for High-Fidelity Long-Form Music Generation</h2>
+	<h2>Integrating Super Resolution and Low-bitrate Codec Language Model for High-Fidelity Text-guided Music Generation</h2>
 	</div>
 	<p><b>Abstract</b>
-	We introduce InspireMusic, a unified framework that integrates super resolution and large language model for controllable generation of high-fidelity long-form music, songs, and audio at 48kHz with both text and audio prompts.  Different from previous approaches, InspireMusic utilizes an ultra-low bitrate, single-codebook audio tokenizer that achieves high reconstruction performance while containing richer semantic information than competitive neural acoustic codecs, thereby enhancing efficiency of training and inference. An autoregressive (AR) transformer large language model (LLM) based on Qwen2.5 is employed for predicting audio tokens.  We propose a super-resolution flow-matching model to generate high-sampling-rate audio with fine-grained details learned from an acoustic codec model. Through incorporating the audio tokenizer, the LLM, and the super-resolution flow-matching model, InspireMusic can generate high-quality and coherent long-form music up to $8$ minutes. 
-	Comprehensive experiments demonstrate that InspireMusic with 1.5B parameters achieves comparable to superior performance compared to existing top-tier open-source and closed-source music generation systems, including MusicGen and Stable Audio 2.0, in both objective and subjective evaluations. 
+	We introduce InspireMusic, a unified framework that integrates super resolution and a language model for text-guided generation of high-fidelity long-form higher sampling rate music. Different from previous approaches, InspireMusic utilizes a low-bitrate single-codebook audio tokenizer that achieves high reconstruction performance while containing richer semantic information than competitive neural acoustic codecs, thereby enhancing the efficiency of training and inference. An autoregressive transformer large language model (LLM) based on Qwen2.5 is used to predict audio tokens. Through incorporating the audio tokenizer, the language model, and the super-resolution flow-matching model, InspireMusic can generate high-quality and coherent long-form music. We propose a distribution-aware dual-temperature truncation scheme for robust token selection and pair it with a positive-momentum projection guidance mechanism that keeps the autoregressive decoder stable during music generation. Comprehensive experiments demonstrate that InspireMusic achieves comparable to superior performance compared to top-tier open-source and closed-source music generation systems, in both objective and subjective evaluations. 
 	</p>
 	</p>
 
@@ -42,7 +41,7 @@
 	- High audio quality, support 48kHz, 24kHz.
 	</ul>
 	<ul>
-	- A unified high efficiency music generation framework.
+	- An effective decoding scheme to keep autoregressive decoder stable during music generation.
 	</ul>
 </p>
 	</p>
@@ -93,7 +92,7 @@ This component is trained using a next-token prediction approach on both text an
 - **Super-Resolution Flow Matching** Model:
 An ODE-based diffusion model, specifically a super-resolution flow matching (SRFM) model, maps the lower-resolution audio tokens to latent features with a higher sampling rate. A vocoder then generates the final audio waveform from these enhanced latent features.
 
-InspireMusic supports a range of tasks including text-to-music, music continuation, music reconstruction, and music super-resolution.--			[<a href="https://arxiv.org/abs/">Paper</a>]-->
+InspireMusic supports a range of tasks including text-to-music, music continuation, music reconstruction, and music super-resolution.-->
 		</p>
 </div>
 
